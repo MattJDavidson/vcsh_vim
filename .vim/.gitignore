@@ -1,0 +1,13 @@
+*.un~
+*~
+*~
+.VimballRecord
+.netrwhist
+Session.vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+backups/**
+bundle/**
+sessions/**
+tags
+view
