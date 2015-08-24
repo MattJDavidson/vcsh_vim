@@ -21,8 +21,29 @@ syntax on
 
 " =============== Rebindings ===============
 let mapleader="\<Space>"
+" swap behaviour of ; and : for faster commands, ;; still moves along in f/F search
 map ; :
 nnoremap ;; ;
+
+" Leader w now saves
+nnoremap <Leader>w :w<CR>
+
+" Leader interacts with clipboard
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" Double tap leader to go Visual mode
+nmap <Leader><Leader> V
+
+" /search selections are now text objects that can be changed using cs
+" n.n.n.n. can be used to change multiple findings
+vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
+    \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
+omap s :normal vs<CR>
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundles.vim
