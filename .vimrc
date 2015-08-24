@@ -21,7 +21,8 @@ syntax on
 
 " =============== Rebindings ===============
 let mapleader="<Space>"
-nmap ; :
+map ; :
+nnoremap ;; ;
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundles.vim
