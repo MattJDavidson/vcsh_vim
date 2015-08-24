@@ -20,7 +20,7 @@ set hidden
 syntax on
 
 " =============== Rebindings ===============
-let mapleader="<Space>"
+let mapleader="\<Space>"
 map ; :
 nnoremap ;; ;
 
