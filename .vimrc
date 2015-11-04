@@ -21,12 +21,7 @@ syntax on
 
 " =============== Rebindings ===============
 let mapleader="\<Space>"
-" swap behaviour of ; and : for faster commands, ;; still moves along in f/F search
-map ; :
-nnoremap ;; ;
 
-" Leader w now saves
-nnoremap <Leader>w :w<CR>
 
 " Leader interacts with clipboard
 vmap <Leader>y "+y
@@ -36,8 +31,6 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-" Double tap leader to go Visual mode
-nmap <Leader><Leader> V
 
 " /search selections are now text objects that can be changed using cs
 " n.n.n.n. can be used to change multiple findings
