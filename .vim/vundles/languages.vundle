@@ -7,5 +7,4 @@ Bundle 'nelstrom/vim-markdown-preview'
 Bundle 'skwp/vim-html-escape'
 
 " Python
-" Bundle 'klen/python-mode'
-Bundle 'davidhalter/jedi-vim'
+Bundle 'hynek/vim-python-pep8-indent'

@@ -29,6 +29,7 @@ vmap <Leader>p "+p
 vmap <Leader>P "+P
 
 map <Leader>nt :NERDTreeToggle<CR>
+map <Leader>ss :SyntasticToggleMode<CR>
 
 
 " /search selections are now text objects that can be changed using cs
@@ -103,7 +104,7 @@ set wildignore+=*.png,*.jpg,*.gif
 " ================ Scrolling ========================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
-set sidescrolloff=15
+set sidescrolloff=3
 set sidescroll=1
 
 " ================ Search ===========================
