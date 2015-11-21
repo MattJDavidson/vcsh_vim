@@ -12,9 +12,6 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 
-" This makes vim act like all other editors, buffers can
-" exist in the background without being in a window.
-" http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
 syntax on
@@ -30,6 +27,8 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+
+map <Leader>nt :NERDTreeToggle<CR>
 
 
 " /search selections are now text objects that can be changed using cs
@@ -113,6 +112,11 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
+
+" ================ Apperance  ===========================
+
+set background=light
+colorscheme solarized
 
 " ================ Custom Settings ========================
 " Settings for each plugin are storing in ~/.vim/settings/$PLUGIN_NAME.vim
