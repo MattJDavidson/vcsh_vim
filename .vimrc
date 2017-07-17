@@ -117,6 +117,7 @@ set smartcase       " ...unless we type a capital
 " ================ Apperance  ===========================
 
 set background=light
+set guifont=Hack\ 11
 colorscheme solarized
 
 " ================ Custom Settings ========================
